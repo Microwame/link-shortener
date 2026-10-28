@@ -15,8 +15,8 @@ def encodeBase62(num, decode=False):
         return alphabet[0]
     output = ""
     while num > 0:
-        remainder = num % 62
-        output = alphabet[remainder] + output
+        resto = num % 62
+        output = alphabet[resto] + output
         num //= 62
     return output
 
